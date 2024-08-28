@@ -1,4 +1,4 @@
-import { Text, View, FlatList, Image } from "react-native";
+import { Text, View, FlatList, Image, RefreshControl } from "react-native";
 import { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { images } from "@/constants";
@@ -69,9 +69,10 @@ const Home = () => {
             subtitle="Be the first to upload a video"
           />
         )}
-        /*   refreshControl={
+          refreshControl={
           <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
-        }   */
+        }  
+       
       />
     </SafeAreaView>
   );
